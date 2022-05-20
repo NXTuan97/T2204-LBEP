@@ -16,8 +16,6 @@ int main (){
 	}else{
 		printf("%d khong la so nguyen to", n);
 	}
-
-
 return 0;
 }
 
