@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<stdlib.h>
+#include<math.h>
 int main (){
 	int x;
 	int n; 
@@ -14,30 +14,18 @@ int main (){
 	for(int i=0; i<n; i++){
 		scanf("%d", &arr[i]);
 	}
-//	int khoangcach;
-
-//	while(i<n){
-//		khoangcach = abs(x - arr[i]);
-//		if(khoangcach < min){
-//			min = khoangcach;
-//		}
-//		i++;
-//	}
-//	
 	int	min = abs(arr[0] - x);
 	int khoangcach;
 	for(int i=1; i<n; i++){
 	    khoangcach = abs(arr[i] - x);
-		printf("khoangcach: %d\n", khoangcach);
 		if(khoangcach < min){
 			min = khoangcach;
 		}
-		printf("min: %d\n", min);
-	}
 
-	for(int j=0;j<n;j++){
-		if(abs(arr[j] - x ) == min){
-			printf("%d ", arr[j]);
+	}
+	for(int i=0;i<n;i++){
+		if(abs(arr[i] - x ) == min){
+			printf("So can tim la %d\n", arr[i]);
 		}
 	}
 	return 0;
