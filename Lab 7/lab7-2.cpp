@@ -26,7 +26,7 @@ bool kiemtrasonguyento(int n){
 	}
 	return true;
 }
-int soNguyenTo(int n, int arr[]){
+int soNguyenToMin(int n, int arr[]){
 	int max=arr[0];
 	for(int i=0; i<n; i++){
 		if(arr[i]>max){
@@ -45,7 +45,7 @@ int main(){
 	int arr[5];
 	nhapMang(5,arr);
 	inMang(5,arr);
-	int nt =soNguyenTo(5,arr);
+	int nt =soNguyenToMin(5,arr);
 	printf("Ket qua la: %d",nt);
 }
 
